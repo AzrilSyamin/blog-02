@@ -1,0 +1,134 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  /* margin: 10px; */
+}
+
+nav a {
+  display: inline-block;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  margin: 5px 6px;
+}
+
+nav a:hover {
+  color: white;
+  background-color: rgb(23, 139, 149);
+  border-radius: 5px;
+}
+
+.hero-section {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(23, 139, 149);
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.hero-section h3 {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.hero-section p {
+  margin: 20px 0;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  text-shadow: 3px 3px 3px black;
+}
+
+.hero-section button {
+  background-color: brown;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.content-section {
+  padding: 10px;
+}
+
+.content-section .blog-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.content-section .blog-title h4 {
+  color: rgb(23, 139, 149);
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 2px 2px 1px #aaa;
+}
+
+.content-section .blog-title hr {
+  background-color: rgb(23, 139, 149);
+  width: 100px;
+  height: 5px;
+}
+
+.content-section .articel-row {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+}
+
+.content-section .articel {
+  background-color: aliceblue;
+  padding: 8px;
+  margin: 5px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 3px -3px rgb(23, 139, 149);
+}
+
+.content-section .articel img {
+  width: 100%;
+}
+
+@media (max-width: 765px) {
+  .content-section .articel-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 765px) {
+  .content-section .articel-row {
+    width: 100%;
+  }
+}
+
+.content-section .articel h6 {
+  font-size: 30px;
+  margin: 8px 0;
+}
+
+.content-section .articel p {
+  padding: 5px;
+  font-size: 20px;
+}
+
+.content-section .articel span {
+  padding: 5px;
+  font-size: 15px;
+}
